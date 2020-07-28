@@ -1,0 +1,540 @@
+#Started with python
+
+#addition of two numbers
+"""
+a= 3+4
+print(a)
+"""
+
+#Subtraction of two numbers
+"""
+a= 3-8
+print(a)
+"""
+
+#Multyplication of two numbers
+"""
+a= 3*8
+print(a)
+"""
+#finding Cube
+"""
+a= 2**3
+print(a)
+"""
+#Division
+"""
+a= 4/2
+print(a)
+"""
+
+#----float Division---
+"""
+a= 4//2
+print(a)
+"""
+#Multyple mathmatic opertion
+"""
+#a= 3+5-2
+a= (3+5)*2
+print(a)
+"""
+
+#Modular %
+
+#a= 10//3
+"""
+a= 10%3   #Modular gives you the reminder part of division
+print(a)
+"""
+
+
+#----------------------------String----------------------------------------
+
+"""
+print('pintoo')
+"""
+#-------------------
+"""
+a= 'pintoo'
+print(a)
+"""
+#--------------------
+
+#print("pintoo's laptop")
+
+#print('pintoo "laptop"')
+
+"""
+print('pintoo\'s "laptop"') # \ means skip the special meaning of syntax
+        #or
+print("pintoo \"laptop")
+"""
+
+#Concatinate two strings or adding two string
+"""
+a= "pintoo"
+b= " kumar"
+c= a+b
+print(c)
+"""
+#---------------
+"""
+a= "pintoo" + " kumar"
+print(a)
+"""
+#---------------
+#print string multyple times by mltylping
+"""
+a= "pintoo " * 10
+print(a)
+"""
+#--------------------
+"""
+print("c:\computer\navin")
+print("My \name is PinTwo") #In python \n has a special meaning which means after \n it will start printing from new line
+                            #to avoid printing from new line simply put r called raw string before printing line
+"""
+#print(r"My \name is PinTwo")
+
+
+
+#-------------------------variables-----------------------
+#x= 2
+#Variable is a container where you put the values | and name of the container is x
+
+"""
+x= 2
+y= x+5
+print(y)
+"""
+#-----------
+
+#String | Variables
+"""
+first_name="pintoo"
+name= first_name + " kumar"
+print(name)
+"""
+#------------------------------------
+"""
+first_name="pintoo"
+last_name= " kumar"
+name= first_name + last_name
+print(name)
+"""
+#-------------------
+#Now let's fetch the strings from array
+
+#name= "PinTwo"
+"""
+print(name[1]) #If i start from positve number it will print from left side
+print(name[-1]) #If i start from negative number it will print from right side
+"""
+"""
+print(name[0:3])
+print(name[0:])
+print(name[:3])
+"""
+
+#naam= print(name[0:]+" kumar")
+
+#----------------------------------list in python------------------------------------------------------------------
+"""
+num= [54,64,32,65,45,87,23]
+print(num)
+print(num[1])
+"""
+#-----------
+"""
+naam= ["pintoo", "satyam", "keshav", "kush","shivam"]
+print(naam)
+print(naam[1])
+"""
+#-----------------------
+"""
+num= [54,64,32,65,45,87,23]
+naam= ["pintoo", "satyam", "keshav", "kush","shivam"]
+
+print(num,naam)
+"""
+"""
+num= [54,64,32,65,45,87,23]
+#num.append(11)      #It will add values in last
+#num.insert(0,11)    #it will insert value on index number 0
+#num.remove(54)  #it will remove that given values
+#num.pop(0)      #it will remove the value of given index number
+#del num[0:3]    #It will delete multiple value which is specify in index value
+#num.extend([2,74,3,8,9])   #it will add multiple values
+#print(min(num))  #it will gives you minimum value from list
+#print(max(num))   # it will gives you maximum value from list
+#print(sum(num))   # it will gives you sum list
+#num.sort()   #it will give you values in sorted format
+#num[0]= 55   #It wil change the value of given index value
+print(num)
+"""
+#-------------------------------------Tuple in python--------------------------------------------
+#Tuple is Unmutable it means we can't change the values like List
+"""
+tups= (22,43,67,32,98,54,36,22)
+#print(tups[1])
+print(tups)
+"""
+
+#--------------------------------------Set in python-----------------------------------------
+#set is a colection of unique values, it means in a set their should not be repeated value otherwise it will not print
+#set do not follow  sequence so it does not support index function
+"""
+se= {23,56,79,34,32,90,78}
+print(se)
+"""
+#-----------
+"""
+se= {23,23,56,79,34,32,90,78}
+#se.remove(90)  #It will remove the given value from set
+print(se)
+"""
+
+#------------------------------------Dictionery in python-------------------------------------------------
+"""
+data= {1:"pintoo", 2:"satyam", 3:"kush", 4:"luv", 5:"shivam"}
+print(data[1])
+#print(data.get(6))
+print(data)
+"""
+#-----------------
+"""
+name= ["pintoo", "styam", "kush", "shivam"]
+program= ["python","css","java", "html"]
+dicts= dict(zip(name,program))
+
+#print(dicts)
+print(dicts["pintoo"])
+
+#dicts["tarun"]= "js" #this line will add more in the dictioney
+#del dicts["tarun"]   #this will delete from dictionery
+
+print(dicts)
+"""
+
+#-------------Dictionery in dictionery-------------------------
+"""
+data= {"pintoo":"yadav","satyam":'tiwari',"nikhil":"singh","subject":["hindi","english","science","math"],
+
+       "city":{"pintoo":"pitampura","nikhil":"begumpur","satyam":"saraswati vihar"}}
+
+print(data)
+print(data["pintoo"])
+
+print(data["subject"])
+print(data["subject"][1])
+
+print(data["city"])
+print(data["city"]["satyam"])
+"""
+
+#--------------------------More on variables------------------------------
+"""
+num= 4
+naam= "pintwo"
+
+print(id(num))
+print(id(naam))
+"""
+#-------------
+"""
+a= 5
+#b=a
+b=6
+m= 5
+
+print(id(a))
+print(id(b))
+print(id(m))
+"""
+
+#--------------------------------------------Data types in python--------------------------------------------------
+
+#None
+#Numeric
+#String
+#List
+#Tuple
+#Set
+#Range
+#Dictionery
+
+#-----------------------------------None data type---------------------------
+
+#When you have variables which have not assign any value is called None
+
+#---------------------------Numeric data type-------------------------------
+
+#int
+#float
+#complex
+#bool
+"""
+a= 8
+print(type(a))   #int
+
+b= 4.2
+print(type(b))   #float
+
+c= 3+5j
+print(type(c))   #comlex
+
+d= 5<8          #bool  (boolean data type is either True or False. In Python, boolean variables are defined by the True and False keywords)
+print(type(d))
+"""
+
+#------convert one data types to another
+
+#int to float
+
+"""
+a= 8
+b= float(a)
+print(b)
+print(type(b))
+"""
+#float to int
+"""
+a= 8.3
+b= int(a)
+print(b)
+print(type(b))
+"""
+#int to bool
+"""
+a= 8
+b= bool(a)
+print(b)
+print(type(b))
+"""
+#int to complex
+"""
+a= 8
+b= 3
+c= complex(a,b)
+print(c)
+print(type(c))
+"""
+#-------------------------------------[list], (tuple), {set}, "string" data type-------------------------------------
+"""
+lst= [34,67,12,63,25,29,54]
+print(type(lst))  #list
+
+tpl= (34,67,12,63,25,29,54)
+print(type(tpl))   #tuple
+
+sat= {34,67,12,63,25,29,54}
+print(type(sat))   #set
+
+str= "pintoo"
+print(type(str))
+"""
+#----------------------------------range data type---------------------------------------
+"""
+x= list(range(10))
+print(x)
+"""
+"""
+x= list(range(1,10,2))
+print(x)
+"""
+
+#----------------------------------Dictionery data type------------------------------------------------------
+"""
+data= {"pintoo":"realme c1", "satyam":"jio phone", "kush":"samsung", "shivm":"apple"}
+
+print(data)
+print(data.keys())
+print(data.values())
+print(data["pintoo"])
+"""
+#-----------------------------------operators in python----------------------------------------------
+#Arithmetic operators
+#Assignment operators
+#Relational operators
+#Logical operators
+#Urinary operator
+
+#-----------------------------------------Arithmetic operators-------------------------------------
+"""
+a= 3+4          #Addition
+print(a)
+"""
+"""
+a= 3-8     #Subtracion
+print(a)
+"""
+"""
+a= 3*8   #Multiplication
+print(a)
+"""
+
+#------------------------------------------Assignment operators-------------------------------------------
+#simply means assigning the values
+
+"""
+a= 5
+b,c= 3,7
+
+print(a)
+print(b)
+print(c)
+"""
+#-------
+"""
+a=5
+b= 7
+c= a+b
+print(c)
+"""
+#--------------------------------------------------Urinary operators--------------------------------------------
+#(-)
+"""
+n= 7
+n= -n
+print(n)
+"""
+
+#---------------------------------------------Relational operators-----------------------------------------------
+
+"""
+a= 5
+b= 6
+
+#x= a<b      #a is less then b
+#x= a>b       #a is greater then b
+#x= a==b     #a is equal to b
+#x= a<=b     #a is less then and equal to b
+#x= a>=b     #a is greater then and equal to b
+#x= a!=b     #a is not equal to b 
+
+print(x)
+"""
+
+#---------------------------------------Logical Operators------------------------------------------------------------
+"""
+a= 5
+b= 6
+#x= a<10 and b<15  #and operator will print true if both the condition are true
+#x= a<10 and b<4   #and operator will print false if one codition is true or another condition is false
+#x= a<10 or b<15
+x= a<10 or b<b
+print(x)
+"""
+"""
+a= True
+a= not a
+print(a)
+"""
+
+#---------------------------------------------Number System Conversion in python----------------------------------------
+
+#Decialmal > Base 10 > 0-9 : 0-1-2-3-4-5-6-7-8-9
+#Binary > Base 2 > 0-1 : 0-1
+#Octal > Base 8 > 0-7: 0-1-2-3-4-5-6-7
+#HexaDecimal > Base 16 > 0-9 a-f: 0-1-2-3-4-5-6-7-8-9 a-b-c-d-e-f
+
+
+#convert decimal number to binary format: 25 > 0b11001
+"""
+a= bin(25)
+print(a)
+"""
+#convert binary format to decimal number: 0b11001 > 25
+"""
+a= 0b11001
+print(a)
+"""
+#convert decimal number to Octal format: 25 > 0o31
+"""
+a= oct(25) 
+print(a)
+"""
+#convert octal format to decimal number: 0o31 > 25
+"""
+a= 0o31
+print(a)
+"""
+
+#convert decimal number to HexaDecimal format: 25 > 0x19 , 10> 0xa
+"""
+a= hex(25)
+print(a)
+"""
+"""
+b= hex(10)
+print(b)
+"""
+#convert HexaDecimal to decimal number: 0x19 > 25 , 0xa > 10
+"""
+a= 0x19
+print(a)
+"""
+"""
+b= 0xa
+print(b)
+"""
+
+#---------------------------------------------------Swap variables-----------------------------------------
+
+
+#1st  Way
+
+"""
+a= 5
+b= 6
+
+temp= a
+a= b
+b= temp
+print(a)
+print(b)
+"""
+#2nd Way
+
+"""
+a= 5
+b= 6
+
+a= a+b   #11
+b= a-b   #5
+a= a-b   #6
+
+print(a)
+print(b)
+"""
+
+#3rd Way
+#Method: (^) XOR
+"""
+a= 5
+b= 6
+
+a= a ^ b
+b= a ^ b
+a= a ^ b
+
+print(a)
+print(b)
+"""
+#4th Way
+#Method: ROT_TWO()
+"""
+a= 5
+b= 6
+
+a,b = b,a
+
+print(a)
+print(b)
+"""
+#---------------------------------------------------------------------------------------------------------------------
+
+
+
+
