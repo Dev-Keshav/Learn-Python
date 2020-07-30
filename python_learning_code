@@ -533,8 +533,54 @@ a,b = b,a
 print(a)
 print(b)
 """
-#---------------------------------------------------------------------------------------------------------------------
 
+#---------------------------------------------------Bitwise Opertors in python------------------------------------------------
+#compliment opertor (~)
+#And (&)
+#Or (|)
+#XOR (^)
+#Left shift (<<)
+#Right shift (>>)
+
+#---------Compliment opertors(~)
+#Compliment opertors simply reverse the number 1>0 | 0>1
+
+"""
+print(~12)
+
+#Output: (-13)
+"""
+#-------And (&) operator
+"""
+print(12 & 13)
+
+#Output: (12)
+"""
+#-------Or (|) operator
+"""
+print(12 | 13)
+
+#Output: (13)
+"""
+#-------XOR (^) operator
+"""
+print(12 ^ 13)
+
+#Output: (1)
+"""
+#--------Left shift (<<) opertor
+"""
+print(10 << 2)
+
+#Output: (40)
+"""
+
+#--------Right shift (>>) opertor
+"""
+print(10 >> 2)
+
+#Output: (2)
+"""
 
 
 
