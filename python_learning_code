@@ -583,4 +583,60 @@ print(10 >> 2)
 """
 
 
+#------------------------------Import math function in python------------------------------------
+
+#import math
+
+"""
+x= math.sqrt(25)
+print(x)
+"""
+
+#--Floor & Ceil function
+"""
+x= math.floor(2.4)
+print(x)
+
+y= math.ceil(2.5)
+print(y)
+"""
+#Power of -- function
+"""
+n= 5**2
+print(n)
+#or
+a= pow(5,2)
+print(a)
+"""
+#Find value of Pi
+"""
+print(math.pi)
+"""
+#find epsilon
+"""
+print(math.e)
+"""
+
+#Importing math as m
+"""
+import math as m
+
+a= m.sqrt(25)
+print(a)
+"""
+#importing specific module from math
+"""
+from math import sqrt,pow
+
+a= sqrt(25)
+print(a)
+
+b= pow(5,2)
+print(b)
+"""
+#Research more fucntion of math...
+"""
+import math
+help(math)
+"""
 
