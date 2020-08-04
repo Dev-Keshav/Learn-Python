@@ -640,3 +640,26 @@ import math
 help(math)
 """
 
+#---------------------------------------User Input in python------------------------------------------------------------
+"""
+x= int(input("Enter first Number"))
+y= int(input("Enter Second Number"))
+z= x+y
+print(z)
+"""
+#Fetching specific input
+"""
+a=(input("Enter your Name"))
+print(a[0])
+"""
+"""
+a=(input("Enter your Name"))[0]
+print(a)
+"""
+#Evaluating Expresion (like:7+4-2)
+"""
+a= eval(input("Enter your expression"))
+print(a)
+"""
+
+
