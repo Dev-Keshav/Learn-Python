@@ -662,4 +662,75 @@ a= eval(input("Enter your expression"))
 print(a)
 """
 
+#-------------------------------------if,else statement-----------------------------------------------------------------
+#if
+#if else
+#if elif
+#nested if
+#-----------------
+
+#if Statement
+"""
+if True:
+    print("It's true")
+print("By")
+"""
+"""
+x= 10
+y= x%2
+if y==0:
+    print("it's Even Number")
+"""
+
+#if else statement
+"""
+x= 9
+y= x%2
+if y==0:
+    print("it's Even Number")
+else:
+    print("It's Odd Number")
+"""
+#nested if (means: if inside if)
+"""
+x= 10
+y= x%2
+if y==0:
+    print("it's Even Number")
+    if y<5:
+        print("It's greater")
+else:
+    print("It's Odd Number")
+"""
+#or
+
+"""
+x= 2
+y= x%2
+if y==0:
+    print("it's Even Number")
+    if y>5:
+        print("It's greater")
+    else:
+        print("Not so great")
+else:
+    print("It's Odd Number")
+
+"""
+
+#if elif statement
+"""
+x= 2
+
+if x==1:
+    print("One")
+elif x==2:
+    print("Two")
+elif x==3:
+    print("Three")
+elif x==4:
+    print("Four")
+else:print("Over Limit")
+"""
+
 
