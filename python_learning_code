@@ -766,3 +766,33 @@ while x<=5:
     print()
 """
 
+#--------------------------------------------For loop-------------------------------------------------------------------
+"""
+x= ["pintwo", 3, 4.1]
+
+for i in x:
+    print(i)
+"""
+#or
+"""
+x= "pintwo"
+
+for i in x:
+    print(i)
+"""
+#or
+"""
+for i in ["pintoo",5,6.3]:
+    print(i)
+"""
+#or
+"""
+for i in range(1,100):
+    print(i)
+"""
+#if inside for loop
+"""
+for i in range(1,11):
+    if i%5!=0:
+        print(i)
+"""
