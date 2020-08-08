@@ -796,3 +796,104 @@ for i in range(1,11):
     if i%5!=0:
         print(i)
 """
+
+#--------------------------------------------------Break, Continue, Pass------------------------------------------------
+
+"""
+x= int(input("How many candy do you want?"))
+
+i= 1
+while i<=x:
+    print("Candy", i)
+    i+=1
+"""
+#or
+#-----Break
+"""
+av= 10
+x= int(input("How many candy do you want?"))
+
+i= 1
+while i<=x:
+    if i>av:
+        print("Sorry only", av , "Candy are available")
+        break
+    print("Candy", i)
+    i+=1
+
+print("Okay, By")
+"""
+
+#------Continue
+
+"""
+for i in range(1,100):
+    if i%3==0:
+        continue
+    print(i)
+
+print("By")
+"""
+#or
+
+"""
+for i in range(1,100):
+    if i%3==0 or i%5==0:
+        continue
+    print(i)
+
+print("By")
+"""
+#-----pass
+"""
+for i in range(1,100):
+    
+    if i%2!=0:
+        pass
+    else:
+        print(i)
+
+print("By")
+"""
+#----------Continue vs Pass vs Break
+
+
+#continue function
+
+"""
+for i in range(101):
+    if i==3:
+        continue    #Continue function skip given condition
+                    #but it will print print other all numbers. In other word it will skip 3 (given condition) and continue all other number
+    print(i)
+
+"""
+
+#break function
+
+"""
+
+for i in range(1,101):
+
+    if i==3: #in this condition (if i==3:) and set break fuction, break function skip given condition
+            #break function will stop the loop after found given function
+                #in other word 1 to 100 after 3 it will not print next number from 3
+        break
+
+    print(i)
+"""
+
+#pass fuction
+
+""" 
+
+for i in range(100):
+
+    if i==3:#in many scenario we have to use some function in our code, but at that time we don't want to call that fucntion
+           #so, for that we use pass function it will skip those function or not execute that specific function
+        pass
+
+    print(i)
+
+"""
+
