@@ -968,3 +968,63 @@ else:
     print("Prime")
 """
 
+#----------------------------------------------------Array in python-----------------------------------------------------
+"""
+from array import *
+
+#search on google for: "Python type code" or "python uncode"
+
+val= array("i",[32,56,-4,9,8,2,3])
+#val= array("I",[32,56,-4,8,2,3])
+
+print(val)
+
+print(val.buffer_info()) #it will print addres of array and the size
+print(val.typecode)  #it will print type which we are working with right now
+#val.reverse()   #it will reverse the order
+#print(val[0]) #print using index value
+
+for i in val:
+    print(i)
+
+#or
+
+for i in range(len(val)):
+    print(val[i])
+#or
+
+for i in range(5):
+    print(val[i])
+
+#for character unicode
+#make sur array is imported
+
+data= array("u",["a","r","h","f","e","i"])
+print(data)
+
+
+for i in data:
+    print(i)
+
+#if you don't know the "typecode"
+#make sur array is imported
+
+val= array("i",[32,56,4,9,8,2,3])
+
+new_arr= array(val.typecode,(a for a in val)) #it will fetch value and typecode one by one from "vall" variable
+
+print(new_arr)
+
+#print using for loop
+for i in new_arr:
+    print(i)
+
+
+#print using while loop
+
+x= 0
+while x<len(new_arr):
+    print(new_arr[x])
+    x= x+1
+"""
+
