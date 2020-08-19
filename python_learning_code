@@ -1028,3 +1028,44 @@ while x<len(new_arr):
     x= x+1
 """
 
+
+
+#----------------------------------------Array taking value from user---------------------------------------------------
+#search in Array
+#Inserting elements in Array
+#Searching for elements in Array
+
+"""
+from array import *
+
+data= array("i",[])
+
+#asking for the lenth of the array from user
+
+lent= int(input("Enter the length of the Array"))
+
+for i in range(lent):
+    x= int(input("Enter the next value"))
+    data.append(x)
+
+print(data)
+
+
+#Searching for elements in Array (using manual method)
+
+val= int(input("Enter the value for search"))
+
+k= 0
+for e in data:
+    if e==val:
+        print(k)
+        break
+
+    k= k+1
+
+#Searching for elements in Array (using function method)
+
+#print(data.index(val))
+
+"""
+
