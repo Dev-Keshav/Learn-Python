@@ -1069,3 +1069,16 @@ for e in data:
 
 """
 
+
+#-------------------------------------------Installing Numpy------------------------------------------------------------
+#working with numpy
+#creating array with numpy
+"""
+from numpy import *
+
+#with numpy package no need to specify typecode
+
+arr= array([32,54,67,36,98,45,73,82,97,43,65])
+print(arr)
+
+"""
