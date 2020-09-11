@@ -358,7 +358,7 @@ print(data["pintoo"])
 #Assignment operators
 #Relational operators
 #Logical operators
-#Urinary operator
+#Unary operator
 
 #-----------------------------------------Arithmetic operators-------------------------------------
 """
@@ -392,7 +392,7 @@ b= 7
 c= a+b
 print(c)
 """
-#--------------------------------------------------Urinary operators--------------------------------------------
+#--------------------------------------------------Unary operators--------------------------------------------
 #(-)
 """
 n= 7
