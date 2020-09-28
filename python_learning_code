@@ -1082,3 +1082,59 @@ arr= array([32,54,67,36,98,45,73,82,97,43,65])
 print(arr)
 
 """
+
+#--------------------------------------------different ways of creating array in numpy--------------------------------------------
+
+#arrya()
+#linspace()
+#logspace()
+#arange()
+#zeros()
+#ones()
+
+
+from numpy import *
+
+"""
+#array()
+
+arr= array([36,56,34,38,67,45])
+print(arr)
+print(arr.dtype)
+print(type(arr))
+"""
+
+#linspace()
+
+"""
+arr= linspace(0,15,5) #linspace() takes three parameters first is to start second is length & third is to break into the numbers of part
+print(arr)
+"""
+
+#arange()
+
+"""
+arr= arange(0,15,5) #arange() takes three parameters first is to start second is length & third is step
+print(arr)
+"""
+
+#logspace()
+
+"""
+arr= logspace(0,15,5) #logspace() takes three parameters first is to start second is length & third is to break into the numbers of part
+print(arr)            #but in the logspace d/f b/w parts depends upon the log
+print("%.2f"%arr[0])
+"""
+
+#Zeros()
+
+"""
+arr= zeros(5) #it will create an array of the given size or value will be 0 of every number by default
+print(arr)
+"""
+
+#Ones
+"""
+arr= ones(5) #it will create an array of the given size or value will be 1 of every number by default
+print(arr)
+"""
