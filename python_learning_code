@@ -1085,7 +1085,7 @@ print(arr)
 
 #--------------------------------------------different ways of creating array in numpy--------------------------------------------
 
-#arrya()
+#array()
 #linspace()
 #logspace()
 #arange()
@@ -1138,3 +1138,95 @@ print(arr)
 arr= ones(5) #it will create an array of the given size or value will be 1 of every number by default
 print(arr)
 """
+
+#---------------------------------------------Copying an array in python--------------------------------------------------
+
+#Array addition
+#Aliasing
+#Shallow copy
+#Deep copy
+
+
+
+from numpy import *
+
+#More stuff with array
+
+#Array addition
+"""
+arr= array([1,2,3,4,5])
+arr= arr + 5
+print(arr)
+"""
+#Addition of two array also called Vactorized Operation
+
+"""
+arr1= array([1,2,3,4,5])
+arr2= array([4,1,7,3,8])
+
+arr3 = arr1 + arr2
+
+print(arr3)
+"""
+
+#Concatenate Two arrays
+"""
+arr1= array([1,2,3,4,5])
+arr2= array([6,7,8,9,8,10])
+
+arr3= (concatenate([arr1,arr2]))  #making two big array
+
+print(arr3)
+"""
+"""
+arr= array([1,2,3,4,5])
+
+print(sin(arr))
+print(cos(arr))
+print(log(arr))
+print(sqrt(arr))
+print(sum(arr))
+print(min(arr))
+print(max(arr))
+print(size(arr))
+"""
+
+#Copying an array | Aliasing
+"""
+arr1= ([6,4,2,9,1])
+
+arr2= arr1
+
+print(arr1)
+print(arr2)
+
+print(id(arr1))  #both the array having the same id, both are pointing to same address also called Aliasing
+print(id(arr2))
+"""
+#How to create new array at d/f location | use: .view()
+#or Shallow copy: simply means it copy the array but both array are still independent on each other
+"""
+arr1= array([6,4,2,9,5])
+arr2= arr1.view()
+
+#arr1[0]=7  #This will affect both the arrays called shallow copy
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+"""
+#---------Deep copy
+"""
+arr1= array([6,4,2,9,5])
+arr2= arr1.copy()
+
+arr1[0]=7  #This will affect only one arrays called Deep copy
+
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+"""
+
