@@ -1230,3 +1230,93 @@ print(id(arr1))
 print(id(arr2))
 """
 
+#-------------------------------------------Working with Matrix in python--------------------------------------------------
+#How to create Matrix
+#Matrix Multiplication
+
+from numpy import *
+
+#Creating an multi-dimensional Array
+"""
+arr= zeros((3,4),dtype=int)  #3 is number of Row & 4 is number of Column
+print(arr)
+"""
+#or
+"""
+arr1= array([
+
+            [1,2,3],
+            [4,5,6],
+            [7,8,9],
+            [10,11,12]
+
+           ])
+
+print(arr1)
+"""
+"""
+print(arr1.dtype)  #type of an array
+print(arr1.ndim)   #This will print the dimension of an array
+print(len(arr1))   #This will count the numbers of Row
+print(arr1.shape)  #This will print the numbers of Row & Column
+print(arr1.size)   #This will print the size/elements of entire block
+"""
+# Creating an single-dimensional array from multi-dimensional array
+"""
+arr2= arr1.flatten()
+print(arr2)
+"""
+
+# Creating an Multi-dimensional array from single-dimensional array
+"""
+arr3= array([ 1,2,3,4,5,6,7,8,9,10,11,12])
+
+arr4= arr3.reshape(3,4)
+print(arr4)
+"""
+#Creating an big 3 dimensional array in which have 2 dimensional array with each have 3 values
+"""
+arr4= array([
+    [ 1,2,3,4,5,6],
+    [7,8,9,10,11,12]
+            ])
+
+arr5= arr4.flatten()
+arr6= arr5.reshape(2,2,3)
+print(arr6)
+"""
+
+#Matrices Concept: you can imagine two domensional array which has multiple rows and column
+#Row Matrix:single row and multiple column
+#Column Matrix: Single column and multiple rows
+
+#Creating an Matrix
+"""
+arr4= array([
+                [ 1,2,3,4],
+                [5,6,7,8]
+            ])
+
+m= matrix(arr4)
+print(m)
+"""
+#or
+"""
+m= matrix("1 2 3; 4 5 6; 7 8 9")  #To seprate [] the column simply put semi colon ;
+print(m)
+
+print(diagonal(m)) #diagonal functional print only diagonal numbers(shape)which is [1 6 11] not the entire matrix
+print(m.min())  #This will print the min values
+print(m.max())  #This will print the max values
+"""
+
+#Adding, Multyplying Matrices
+
+m1= matrix("1 2 3; 4 5 6; 7 8 9")
+m2= matrix("1 2 3; 4 5 6; 7 8 9")
+m3= m1+m2  #Adding two Matrix
+m4= m1 * m2 #Myltiplying two Matrices: This is not simple multiplication; Matrices Multiplication Theory: https://goo.gl/omPVAS
+print(m3)
+print(m4)
+
+
