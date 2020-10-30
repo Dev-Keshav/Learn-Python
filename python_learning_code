@@ -1319,4 +1319,49 @@ m4= m1 * m2 #Myltiplying two Matrices: This is not simple multiplication; Matric
 print(m3)
 print(m4)
 
+#---------------------------------Functions in  python---------------------------------------------------------------
+#What is function?  : Function is a block where you have one task
+#Why function?     :You can create seprate function for seprate tast or you can also use them again & again by calling once
+#Creating and calling function
+"""
+def greet():   #Definig function
+    print("Hello")
+    print("Good Morning")
+"""
+#greet()  #Calling function
+
+
+#Addition of Two numbers
+"""
+def add(x,y):
+    c= x+y
+    print(c)
+
+add(3,5)
+
+"""
+#Return Function
+
+"""
+def add(x,y):
+    c= x+y
+    return c
+
+result= add(3,5)
+
+print(result)
+
+"""
+
+#Returning Two Values
+"""
+def add_sub(x,y):
+    a= x+y
+    s= x-y
+    return a,s
+
+result1,result2 = add_sub(5,4)
+print(result1,result2)
+
+"""
 
