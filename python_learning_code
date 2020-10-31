@@ -1365,3 +1365,51 @@ print(result1,result2)
 
 """
 
+#--------------------------------------------------------Functions Arguments in python-------------------------------------------------
+#Mutable and Imutable arguments
+#This concept is not in python but in other languages: Pass by Value(Means by value) or Pass by reference (Means pass by address)
+
+"""
+def update(x):
+    x= 8
+    print(x)
+
+update(10)
+
+"""
+#or
+
+"""
+def update(x):
+    #print("x:", id(x))
+    x= 8
+    #print("x2:", id(x))
+    print("x: ", x)
+
+a=10
+#print("a:", id(a))
+update(a)
+#print("a: ", a)
+
+"""
+
+#or
+
+
+"""
+def update(lst):
+    print("lst1:", id(lst))
+    lst[1]= 10
+    print("lst2:", id(lst))
+    print("x: ", lst)
+
+lst= [5,6,7,8,9]
+print("lst0:", id(lst))
+update(lst)
+print("lst: ", lst)
+
+"""
+
+
+
+
