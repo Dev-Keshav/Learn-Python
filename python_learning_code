@@ -1479,6 +1479,20 @@ sum(3,5,7,4,2)
 
 """
 
+#-------------------------------------------Keyworded Variable Length Arguments in Python / **kwargs---------------------------
+
+"""
+def person(name, **data):  #** means you are passing multiple arguments with the help of keywords
+    print(name)            #this is similar to Variable Length Arguments but the d/f is that
+                           #in Variable Length Arguments you can not pass value with keywords but here you can
+  
+    for i,j in data.items(): #i for keywords and j for values
+        print(i,j)
+
+person("keshav", age= 17, state= "Delhi", number= 7827602234)
+
+"""
+
 
 
 
