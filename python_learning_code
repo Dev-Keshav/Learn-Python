@@ -1410,6 +1410,75 @@ print("lst: ", lst)
 
 """
 
+#------------------------------------------------Types of Arguments----------------------------------------------------------
+#position
+#keyword
+#Default
+#Variable Length
+
+"""
+def add(a,b):  #the accepting/Defining arguments also called as "Formal Arguments"
+    ad= a+b
+    print(ad)
+
+
+add(5,7)    #the passing/Calling arguments also  called as "Actual Arguments"
+            #The "Actual Arguments" itself has 4 Types Arguments
+            #(1) position
+            #(2) keyword
+            #(3) Default
+            #(4) Variable Length
+"""
+
+#Position Arguments
+
+"""
+def person(name,age):
+    print(name)
+    print(age-5)
+
+
+person(age=17,name="keshav")  #When you don't know the sequence of passing & Accepting Arguments put the variable name called "keywords"
+                              #or "keyword Arguments"
+
+"""
+
+#Default Arguments
+"""
+def person(name, age=17): #if the actual argument is not passing, you can define here by "Default Argument"
+    print(name)
+    print(age)
+
+person("keshava")
+#person("keshav",20) #if you have given "default argument" and also passing "actual argument"
+                      #then the "actual argument" will override the "default argument"
+
+"""
+
+
+#Variable Length Arguments : (you can define the function where the numbers of actual argumnts is not fixed)
+"""
+def sum(a,*b):  #The first argument is to confirm that we will have atleast two arguments and the second arguments length is not confirm
+    c= a
+    for i in b:
+        c= c+i
+    print(c)
+
+sum(3,5,7,4,2)
+
+"""
+#or
+"""
+def sum(*b):
+    c= 0
+    for i in b:
+        c= c+i
+    print(c)
+
+sum(3,5,7,4,2)
+
+"""
+
 
 
 
