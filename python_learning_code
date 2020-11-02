@@ -1493,6 +1493,59 @@ person("keshav", age= 17, state= "Delhi", number= 7827602234)
 
 """
 
+#------------------------------------------Global Keyword in python-------------------------------------------------
+#Global vs Local
+#global a
+#globals()["a"]
+
+
+#-----Global or Local variable
+"""
+a= 10    #Global Variable (Available for entire region called "Global Scope") same vriable can be use inside function
+
+def something():
+    a= 15      #Local Variable : this variable can't use outside of the function (only available for inside function called "Local Scope")
+    print("Local",a)
+
+
+print("Global",a)
+something()
+
+"""
+#------global a--------------
+"""
+a= 10
+
+def something():
+    global a       #if you wanted to change Local to Global variable then specify it with global keyword
+    a= 15
+    print("in function",a)
+
+something()
+
+print("outside",a)
+
+"""
+#-----------globals a-------------------
+
+"""
+a= 10
+print("a",id(a))
+
+def something():
+    a= 9
+                          #If you want local variable "a" and access of global also wanted to change the global variable
+    x= globals()["a"]     #this will access the global variable "a"
+    print("x",id(x))
+    print("in function",a)
+
+    globals()["a"]=15 #this will change the value of global variable "a" without affecting local variable "a" which is accessed in "x" variable
+
+something()
+
+print("outside",a)
+
+"""
 
 
 
