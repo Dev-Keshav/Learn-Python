@@ -1572,3 +1572,51 @@ even, odd= count(lst)
 print("Even: {} Odd: {}".format(even,odd))
 
 
+#-----------------------------------------Fibonacci Sequence in python-------------------------------------------------------------
+# Fibonacci Sequence: [0] [1] [1] [2] [3] [5] [8] [13] [21]
+#Making Fibonacci Sequence in python
+"""
+def fib(n):
+
+    a= 0
+    b= 1
+
+    print(a)
+    print(b)
+
+    for i in range(2,n):
+
+        c= a + b
+        a= b
+        b= c
+        print(c)
+
+
+fib(5)
+
+"""
+#or
+"""
+def fib(n):
+
+    a= 0
+    b= 1
+
+    if n==1:       #if you only want first fibonacci number
+        print(n)
+    else:
+
+        print(a)
+        print(b)
+
+        for i in range(2,n):
+
+            c= a + b
+            a= b
+            b= c
+            print(c)
+
+
+fib(1)
+"""
+
