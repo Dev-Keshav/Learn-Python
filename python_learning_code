@@ -1639,3 +1639,36 @@ result= fact(x)
 print(result)
 """
 
+#----------------------------------------Recursion in python---------------------------------------------------------
+#Recursion: simply means calling a function itself
+
+"""
+def greet():
+    print("Hello")
+    greet()     #this is calling itself called Recurion
+                #this will print 1k times [technically infinite times] and stop with error exceed limit
+
+greet()
+
+"""
+#or
+"""
+import sys
+
+sys.setrecursionlimit(2000)  #if you wanted to set the limit of recursion
+print(sys.getrecursionlimit()) #if you wanted to know recurion limit
+
+i = 0
+def greet():
+
+    global i
+    i= i+1    #counter: this will show how many time recurion has printed/(greet())
+    print("Hello",i)
+    greet()
+    
+greet()
+
+"""
+
+
+
