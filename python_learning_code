@@ -1620,3 +1620,22 @@ def fib(n):
 fib(1)
 """
 
+
+#---------------------------------------Factorial of a number in python-------------------------------------------------
+#5!= 5*4*3*2*1 or 5!= 1*2*3*4*5 | (5!= 120, 4!= 24)
+"""
+def fact(n):
+
+    f= 1
+
+    for i in range(1,n+1):
+
+        f= f*i
+
+    return f
+
+x= 5
+result= fact(x)
+print(result)
+"""
+
