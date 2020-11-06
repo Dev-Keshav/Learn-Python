@@ -1755,6 +1755,11 @@ print(doubles)
 
 """
 #----reduce()
+#this function is used to reduce a sequence of elements to a single value by processing the elements according 
+  #to a function supplied. it returns a single value
+  
+#this function is a part of functools module so you have to import it before using
+
 
 """
 from functools import  reduce 
