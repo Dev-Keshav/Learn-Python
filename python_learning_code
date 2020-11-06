@@ -1707,4 +1707,85 @@ print(result)
 """
 
 
+#-------------------------------------------filter() | map() | reduce()------------------------------------------------------
+
+
+#------filter() : it will take list to you and it filter those list and give you the value
+"""
+def is_even(n):
+    return n%2==0
+
+nums= [2,3,6,8,4,6,2,9]
+
+evens= list(filter(is_even,nums)) #filter will takes two arguments, first is your function where you the mention logic 
+                                   # or second is your list/sequence/iterable
+print(evens)
+
+"""
+#or  reduce number of line
+"""
+nums= [2,3,6,8,4,6,2,9]
+
+is_even= lambda a : a%2==0
+
+evens= list(filter(is_even,nums))
+
+print(evens)
+
+"""
+#or
+
+"""
+nums= [2,3,6,8,4,6,2,9]
+evens= list(filter(lambda a : a%2==0,nums))
+print(evens)
+
+"""
+#-------map()
+
+#whenever you want to change the every value, there map() function comes into the picture !
+
+"""
+nums= [2,3,6,8,4,6,2,9]
+
+doubles= list(map(lambda a : a*2, nums))   #this will multiple the each value to 2
+
+print(doubles)
+
+"""
+#----reduce()
+
+"""
+from functools import  reduce 
+#reduce function is not inbuilt to use it, import it
+
+
+#def add_all(a,b):
+    #return a+b    #instead of using this function  use lambda function 
+
+
+nums= [2,3,6,8,4,6,2,9]
+
+sum= reduce(lambda a,b : a+b,nums)
+
+print(sum)
+"""
+
+#filter(),map(),reduce() "ek saath"
+"""
+nums= [2,3,6,8,4,6,2,9]
+
+evens= list(filter(lambda a : a%2==0,nums)) #this will filter the even number
+print(evens)
+
+doubles= list(map(lambda a : a*2, evens)) #this will multiply the number to 2 
+print(doubles)
+
+from functools import reduce
+sum= reduce(lambda a,b : a+b,doubles)   #this will add the all numbers
+print(sum)
+
+"""
+
+
 
