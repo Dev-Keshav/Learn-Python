@@ -1709,8 +1709,12 @@ print(result)
 
 #-------------------------------------------filter() | map() | reduce()------------------------------------------------------
 
+#------filter()
+#this function is used to filter out the elements of an iterabe/sequence depending on a function that tests each element in the sequence
+   #to be true or not
+#it return those elements of sequence, for which function is true
 
-#------filter() : it will take list to you and it filter those list and give you the value
+
 """
 def is_even(n):
     return n%2==0
