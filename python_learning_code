@@ -1797,5 +1797,58 @@ print(sum)
 
 """
 
+#---------------------------------------------Decorators in python-----------------------------------------------------
+#using decorators you can add extra features to existing function
+
+"""
+def div(a,b):
+    print(a/b)
+
+div(2,5) 
+"""
+#i want to make numerator should always be greater then denomenetor (look below "swap")
+
+"""
+def div(a,b):
+
+    if a<b:
+        a,b = b,a
+
+    print(a/b)
+
+div(2,5)
+
+"""
+
+#continue...
+
+"""
+def div(a,b):
+
+    if a<b:         #imagine, this division function is not with you, its's in some other file
+        a,b = b,a   #or maybe you don't have an access of the code or you don't want to change the code
+                    #of the existing function
+    print(a/b)
+                    #and we wanted to swap these two variables without touching "div function" (look below)
+div(2,5)            #so here, "Decorators" comes into the picture 
+                    #Decorators: using decorators you can add extra features to existing function
+"""
+"""
+def div(a,b):
+    print(a/b)
+
+def smart_div(func):   #this will be decorator for "div", or except div function as func as i have mentioned
+
+    def inner(a,b):   #this inner function will take same number of parameter as taken by 'div' function,
+                       #name should be same it's not compulsory
+        if a<b:
+            a,b = b,a
+        return func(a,b)
+
+    return inner
+
+div1= smart_div(div)
+div1(2,4)
+"""
 
 
