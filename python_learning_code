@@ -1852,3 +1852,44 @@ div1(2,4)
 """
 
 
+#--------------------------------------------------Modules in python----------------------------------------------------
+#Making our own module in seprate file (Module_Calc) and use them by importing
+
+
+"""
+import Module_Calc  
+                
+a= 2
+b= 4
+
+add= Module_Calc.addition(a,b)
+print(add)
+subt= Module_Calc.subtraction(a,b)
+print(subt)
+"""
+#or
+
+"""
+from Module_Calc import addition
+
+a= 2
+b= 4
+add= addition(a,b)
+print(add)
+"""
+#or
+
+"""
+from Module_Calc import *
+
+a= 2
+b= 4
+
+add= addition(a,b)
+print(add)
+
+subt= subtraction(a,b)
+print(subt)
+"""
+
+
