@@ -1,0 +1,94 @@
+#all below codes are linked to python_learning_code file
+
+
+
+# part of "Module in python"
+
+"""
+def addition(a,b):
+    return a+b
+
+def subtraction(a,b):
+    return a-b
+
+def multiplication(a,b):
+    return a*b
+
+def division(a,b):
+    return a/b
+
+"""
+
+#part of the "Special Variable __name__ "
+
+#1
+
+"""
+print("Hello" + __name__) #run in current file, output: Hello__main__
+                         #run in other file by importing this module/file name it will print this module/file name
+                         #output (where this module has imported):'Hello_Module_Calc'
+print("I am module calc ")
+"""
+
+#2
+
+"""
+import Pyton_Learning_Code
+
+print("It's time to calculate")
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
