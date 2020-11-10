@@ -1892,4 +1892,40 @@ subt= subtraction(a,b)
 print(subt)
 """
 
+#---------------------------------------------------Special Variable __name__--------------------------------------------
+#codes are linked with Module_Calc file
+
+"""
+print(__name__) #output: __main__ | the first module name is always main because that's the point of execution
+                                     #that's where codes start
+"""
+
+#1
+
+"""
+import Module_Calc     #when you import module file, everything which is in module file
+                       # come to where it has imported including print statement
+
+print("module_calc says" + __name__)
+
+"""
+
+#2
+
+"""
+print("Hello")       #i wanted to welcome the user when they run this first file
+print("Welcome user") #but when i import this module in other file and run that so there this code will welcome for in second file
+                       #i don't wanted this so we will put condition (there below :))
+"""
+
+#3
+
+"""
+def main():
+    print("Hello")
+    print("Welcome user")
+
+if __name__ == "__main__":
+    main()
+"""
 
