@@ -2,7 +2,7 @@
 
 
 
-# part of "Module in python"
+# -----------------------------------------part of "Module in python"-------------------------------------------------------------
 
 """
 def addition(a,b):
@@ -19,7 +19,7 @@ def division(a,b):
 
 """
 
-#part of the "Special Variable __name__ "
+#----------------------------------------------------------part of the "Special Variable __name__ "----------------------------------------------------------------------
 
 #1
 
@@ -36,6 +36,40 @@ print("I am module calc ")
 import Pyton_Learning_Code
 
 print("It's time to calculate")
+"""
+
+#----------------------------------------------------------part of the "Special Variable __name__ " | part-2---------------------------------------------------------
+
+#for step1
+"""
+def add():
+    print("result 1 is")
+
+def sub():
+    print("result 2 is")
+
+def main():
+    add()
+    sub()
+
+main()
+"""
+
+#for step2
+
+"""
+def add():
+    print("result 1 is")
+
+def sub():
+    print("result 2 is")
+
+def main():
+    add()
+    sub()
+
+if __name__=="__main__":
+    main()
 """
 
 
