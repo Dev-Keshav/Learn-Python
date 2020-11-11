@@ -1929,3 +1929,38 @@ if __name__ == "__main__":
     main()
 """
 
+
+#------------------------------------------------Special Variable __name__ | part-2 ------------------------------------
+#step1
+"""
+def fun1():
+    print("from fun1")
+
+def fun2():
+    print("from func2")
+
+def main():
+    fun1()
+    fun2()
+
+main()
+"""
+
+#step2
+"""
+from Module_Calc import add    #1
+
+def fun1():
+    add()
+    print("from fun1")
+
+def fun2():
+    print("from func2")
+
+def main():
+    fun1()
+    fun2()
+
+main()
+"""
+
