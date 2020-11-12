@@ -1964,3 +1964,100 @@ def main():
 main()
 """
 
+#------------------------------------Object Oriented Programming (oops)| Introduction-----------------------------------
+# oops concept in easy: (https://www.programiz.com/python-programming/object-oriented-programming)
+
+#Python supports three types of Programming paradigms(Paradigms: Paradigm can also be termed as a method to solve some
+                                                        # problems or do some tasks. A programming paradigm is an approach
+                                                        # to solve the problem using some programming language)
+#learn paradigms in python: (https://www.geeksforgeeks.org/programming-paradigms-in-python/)
+
+#1- Procedure Oriented programming paradigms
+
+    #(series of computational steps are divided modules which means that the code
+    #is grouped in functions and the code is serially executed step by step)
+    #or
+    #if you wanted to create software, you will break down your
+    #projects into small small parts and those module will be function
+
+#2- Functional programming paradigms
+
+    #It uses the mathematical function and treats every statement as functional
+    #expression as an expression is executed to produce a value. Lambda functions or
+    #Recursion are basic approaches used for its implementation. The paradigms mainly
+    #focus on “what to solve” rather than “how to solve”.
+    #or
+    #means you can achive a certain task implementing function as a mathematical function, where
+    #you not manupulate data, which is, instance chaning your data you will still acomplish a task
+    #one of the way is ex. pass a function to a function
+
+#3- Object Oriented programming paradigms
+
+    #Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects",
+    #which can contain data and code: data in the form of fields (often known as attributes or properties),
+    #and code, in the form of procedures (often known as methods)
+
+    #every object will have two things:
+    #1- Attribute: imagine as a data/property (ex. for huuman his name,age,height, etc)
+    #2- behaviour: attribute which we know, our action defines our behaviour (ex. talking, running, dancing etc)
+
+    #if you want to store something in object you need to define variables
+    #if you wants to define behaviour you needs to methods (functions on oop is methods)
+
+   # in oop have so many concepts like: objects, class, encapsulation, abstract, polymorphism,inheritance
+
+
+#-----------------------------------------------------Class and objects-------------------------------------------------
+
+#if you want to create object (tower) you need to blueprint (architect map) of it, here your blueprint is class
+  #so, if you want boject you need to class of it
+
+#Class - Design
+#Object - Instance
+
+"""
+class computer:
+
+    def config(self):    #behaviour (methods [function])  |  self is object which you are passing while calling
+        print("i5, 16Gb, 1TB")
+
+
+comp1= computer()      #"comp1" is an object of "class computer"
+#print(type(comp1))
+
+computer.config(comp1)      #calling...
+"""
+
+#or | another way of calling...
+"""
+class computer:
+
+    def config(self):
+        print("i5, 16Gb, 1TB")
+
+
+comp1= computer()
+
+#computer.config(comp1)
+
+comp1.config()   # how it look behind: comp1.config(comp1)
+"""
+
+#or
+"""
+class computer:
+
+    def config(self):
+        print("i5, 16Gb, 1TB")
+
+
+comp1= computer()
+comp2= computer()
+
+computer.config(comp1)
+computer.config(comp2)
+
+comp1.config()
+comp2.config()
+"""
+
