@@ -2061,3 +2061,36 @@ comp1.config()
 comp2.config()
 """
 
+#---------------------------------------------------__init__method------------------------------------------------------
+#Special variable "__init__"  this is like function but here we call it "method"
+"""
+class computer():
+
+    def __init__(self):    #this will call automatically (if object is created of its class)
+        print("In init")
+
+    def config(self):
+        print("i3", "16Gb", "1TB")  #this will not call untill you not call it
+
+comp1= computer()    #called object creation (computer())
+"""
+
+#or | let's build computer!
+
+"""
+class computer():
+
+    def __init__(self,cpu, ram):    #  self = comp1 (the object) and other 2 parameter is which is excepting below ("i5" or 16)
+        self.cpu= cpu
+        self.ram= ram
+
+    def config(self):
+        print("config is ", self.cpu, self.ram)
+
+comp1= computer("i5", 16)
+comp2= computer("Rayzen3", 8)
+
+comp1.config()
+comp2.config()
+"""
+
