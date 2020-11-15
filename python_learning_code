@@ -2094,3 +2094,118 @@ comp1.config()
 comp2.config()
 """
 
+#-----------------------------------------------Constaructor, self and comparing objects--------------------------------
+
+#----constructor
+"""
+class computer():
+    pass  #we can't keep blank this area so just pass
+
+                     #In our computer there is space called "Heap Memory" where where all the objects are stored
+
+comp1= computer()   #every time you craete an object it is allocated to new space
+comp2= computer()
+                    #okay, size of an object? : Depends on the no. variables and size of each variable
+                    #who allocates size to objects? | who is responsibble to assign the meamory or to calculate the memory?
+                    #that's where "constructor" comes into the picture
+print(id(comp1))
+print(id(comp2))
+"""
+
+#-----------self | importance
+
+"""
+class computer():
+
+    def __init__(self):
+        self.name= "keshav"
+        self.age= 17
+
+comp1= computer()
+comp2= computer()
+  
+  #both the object printing same data i wanted to update or change the data (below)
+
+print(comp1.name, comp1.age)
+print(comp2.name, comp2.age)
+"""
+
+#cotinue...
+
+"""
+class computer():
+
+    def __init__(self):
+        self.name = "keshav"
+        self.age = 17
+
+comp1 = computer()
+comp2 = computer()
+
+comp2.name= "Pintwo"
+comp2.age= 16
+
+print(comp1.name, comp1.age)
+print(comp2.name, comp2.age)
+"""
+
+#continue...
+"""
+class computer():
+
+    def __init__(self):
+        self.name = "keshav"
+        self.age = 17
+
+    def update(self):
+        self.name= "pintoo"
+        self.age= 18
+
+comp1 = computer()
+comp2 = computer()
+
+comp2.name= "Pintwo"
+comp2.age= 16
+
+comp2.update()    #or you can also change the values by defining method/function | if you have many obj you can cahnge it 
+                  #by refering the obj name and .update() function
+
+print(comp1.name, comp1.age)
+print(comp2.name, comp2.age)
+"""
+
+#------------comparing  | what if i wanted to comapre two objects?
+
+"""
+class computer():
+
+    def __init__(self):
+        self.name = "keshav"
+        self.age = 17
+
+    def update(self):
+        self.name= "pintoo"
+        self.age= 17
+
+    #parameters to compare two objects | comparing age
+    def compare(self,other_age):   # Self=comp1, other_age=comp2 | compare(who is calling, whom to compare )
+        if self.age== other_age:
+            return True
+        else:
+            return False
+
+comp1 = computer()
+comp2 = computer()
+
+#comparing two objects
+
+if comp1.compare(comp2):
+
+    print("They are same")
+else:
+    print("They are Different")
+
+print(comp1.name, comp1.age)
+print(comp2.name, comp2.age)
+"""
+
