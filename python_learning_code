@@ -2364,7 +2364,7 @@ print(s2.avg())
 
 print(student.get_schl_name())
 
-print(student.info())
+student.info()
 """
 
 
