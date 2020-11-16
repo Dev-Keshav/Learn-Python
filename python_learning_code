@@ -2211,4 +2211,161 @@ else:
 print(comp1.name, comp1.age)
 print(comp2.name, comp2.age)
 
+#----------------------------------------------Types of variales in python (oops)------------------------------------------------
+#there are two types of variables in oops:
+#1- Instance variables:
+#2- Class/static Variables:
+
+"""
+class car():
+
+    wheels= 4          #variables outside '__init__' and inside the class called as 'class variables' | this is common for all objects
+
+    def __init__(self):
+        self.mil= 10       #variables inside __init__ called as 'instance varable'
+        self.comp= "BMW"   #these two variables are instance variables bcz as the objects changes value also change
+
+
+c1= car()
+c2= car()
+
+c1.mil= 8 #changing value of 'instance variable' which will affect the single object
+
+car.wheels= 5  #changing value for 'class variable' which affect the value of all objects
+
+print(c1.mil,c1.comp,c1.wheels)
+print(c2.mil,c2.comp,c2.wheels)
+
+#things to remember: namespace ia an area where you can create or store objects/variable
+#               -class namespace
+#               -object/instance namespace
+"""
+
+#---------------------------------------------------types of Methods---------------------------------------------------
+#1- instance methods
+#2- class methods
+#3- static method
+
+
+
+#let us make simple function (contain: sudents, schl, marks, and average )
+"""
+class student():
+
+    schl= "Yadava School"
+
+    def __init__(self,m1,m2,m3):
+        self.m1= m1
+        self.m2= m2
+        self.m3= m3
+
+
+#finding average of numbers | funcion will return the method of finding average
+    def avg(self):
+        return (self.m1+ self.m2+ self.m3)/3
+
+
+s1= student(34,47,32)
+s2= student(89,32,12)
+
+print(s1.avg())
+print(s2.avg())
+"""
+
+#-----------------instance methods
+
+#the instance methods contains two type itself
+#1- Accessor
+#2- Mutattor
+"""
+class student():
+
+    schl= "Yadava School"
+
+    def __init__(self,m1,m2,m3):
+        self.m1= m1
+        self.m2= m2
+        self.m3= m3
+
+    def avg(self):
+        return (self.m1+ self.m2+ self.m3)/3
+
+    def get_m1(self):    #if you are only fatching the value of instance variable called as 'Accessor'
+        return self.m1    #if you are modifying the value of instance variable called as 'Mutattor'
+
+    def set_m1(self,value):
+        self.m1= value
+
+
+s1= student(34,47,32)
+s2= student(89,32,12)
+
+print(s1.avg())
+print(s2.avg())
+"""
+
+#------class methods
+"""
+class student():
+
+    schl= "Yadava School"
+
+    def __init__(self,m1,m2,m3):
+        self.m1= m1
+        self.m2= m2
+        self.m3= m3
+
+    def avg(self):
+        return (self.m1+ self.m2+ self.m3)/3
+
+    @classmethod #if you want to create class method you need to declare @classmethod called as 'Decorator'
+    def info(cls): #if you wanted to work with class variables use 'cls' keyword nothing else| cls for class and self keyword for instance var
+        return cls.schl
+
+s1= student(34,47,32)
+s2= student(89,32,12)
+
+print(s1.avg())
+print(s2.avg())
+
+print(s1.info()) #i wanted to work info() with all students/obj not particular to single one (below :))
+print(student.info())
+"""
+
+#------static method
+#if you want any method which has nothing to do with instance and class variable
+#if you wanted to do something extra which is not concern with the variable at that time you will be use 'static method'
+"""
+class student():
+
+    schl= "Yadava School"
+
+    def __init__(self,m1,m2,m3):
+        self.m1= m1
+        self.m2= m2
+        self.m3= m3
+
+    def avg(self):
+        return (self.m1+ self.m2+ self.m3)/3
+
+    @classmethod
+    def get_schl_name(cls):
+        return cls.schl
+
+    @staticmethod  #if you want to create static method you need to declare @staticmethod called as 'Decorator'
+    def info():    #if you want any method which has nothing to do with instance and class variable. don't pass anything no self or cls keyword
+        print("This is an example of static method")
+
+s1= student(34,47,32)
+s2= student(89,32,12)
+
+print(s1.avg())
+print(s2.avg())
+
+print(student.get_schl_name())
+
+print(student.info())
+"""
+
+
 
