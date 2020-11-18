@@ -2851,3 +2851,70 @@ a1.feature2()
 """
 
 
+#-------------------------------------------------polymorphism in python Theory (introduction)----------------------------------------------------------
+#poly morph ism
+#poly means: many
+#morph means: form  | so, that the one things can take multyple forms or the one thing wgich will behave in d/f way
+#As human we have d/f forms, as the situation changes we change ourself,
+#ex. we behave d/f in office and we behave d/f when we are with our frnds
+#------
+#this concept use a lot when it comes to like:
+#loose coupling, dependency injection, interface and etc
+#-----
+#there are four way of implementing polymorphism
+#1- Duck typing
+#2- Operator Overloading
+#3- Method Overloading
+#4- Method Overriding
+
+
+#------------------------------------------------Duck typing------------------------------------------------------------
+
+#Duck Test:
+#if it looks like a duck, swim like a duck , and quack like a duck, then it probably is a duck. :)
+
+
+#small example (Concept): Dynamic Typing
+"""
+x= 5  #type is interger of 'x'
+x= "Keshav"  #and now defining type of 'x' string
+"""
+#there is no any 'type' of 'x' untill you not define it, 'x' is just a name to it, not have any specific type to 'x', untill you do.
+
+#Dynamic Typing: simply means the type which you will mention later
+
+#-------------
+"""
+class PyCharm():   #2...
+
+    def execute(self):
+        print("Compilling")
+        print("Running")
+
+class MyEdittor():   #6...
+
+    def execute(self):
+        print("Compilling")
+        print("Running")
+        print("Spell check")
+        print("Debugg v2")
+
+class laptop():    #1...
+
+    def code(self,ide):
+        ide.execute() #it doesn't matter which 'ide' you are passing, only should have is the 'execute method' to it
+
+
+#ide= PyCharm() #obj of PyCharm ide | 4...
+
+ide= MyEdittor()  #obj of MyEdittor ide | 7...
+
+lap1= laptop()  #3...
+lap1.code(ide)  #5...
+
+#and there is the case: looks like a duck, swim like a duck , and quack like a duck, then it probably is a duck
+#in the same way: if there is an obj (which is 'ide') and it has method 'execute' that it, we are not concern about which
+#cls obj it is, we are concer about it should have execute method | called as Duck Typing
+"""
+
+
