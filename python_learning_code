@@ -3099,7 +3099,93 @@ else:
 a= 5
 print(a)  #...
 print(s1)
+
+#point to remember: operator overloading which simply means you have operator like +, -, /, *, so the operator will remain same 
+#but the operand will change, the type of parameters will change ex, when you call + you are calling __add__() method and 
+#add method take d/f types of parameter or argument, so thats the overloading which means: you have same method name 
+#but the type or number of arguments are  d/f
 """
+
+#--------------------------------------------Method Overloading and Method Overriding------------------------------------
+"""
+#---Method Overloading
+
+#if you have a class and two method name with the same name but the d/f parameter or arg
+#called as method overloading
+#example:
+class student():
+    def average(a,b):
+    def average(a,b,c):
+#but in python we don't have this concept so you can't create method with the same name
+
+#---Method Overriding
+
+#you have two methods with with the same name and same number of parameter or arg (ofcourse not in the same cls)
+#we have the concept of inheritance, cls A, B both have the Method with the same name and number of parameter or arg
+#this is called as Method Overriding
+"""
+
+#code time
+
+#---------Method Overloading
+"""
+class student:
+
+    def __init__(self,m1,m2):
+        self.m1= m1
+        self.m2= m2
+
+    def sum(self,a,b):
+        s= a + b
+
+        return s
+
+s1= student(65,45)
+
+print(s1.sum(5,9,6)) #here i can't except three arg bcz i am passing only two arg (a,b) | i don't want it
+"""
+
+#continue...
+
+"""
+class student:
+
+    def __init__(self,m1,m2):
+        self.m1= m1
+        self.m2= m2
+
+    def sum(self,a=None,b=None,c=None): #even if don't pass the value it will be none | there are another way doing this (keyword variable length)
+
+        s=0
+        if a!=None and b!=None and c!=None:
+            s= a + b + c
+        elif a!=None and b!=None:
+            s= a+b
+        else:
+            s= a
+
+        return s
+
+s1= student(65,45)
+
+print(s1.sum(5,9))  #if i pass except value this will be replaced to None respectively
+"""
+
+#-----Method Overriding
+"""
+class A:
+    def show(self):
+        print("In A show")
+
+class B(A):   #this is overriding show mehod of cls A 
+    def show(self):
+        print("In B show")
+
+
+a1= B()
+a1.show()
+"""
+
 
 
 
