@@ -3186,6 +3186,76 @@ a1= B()
 a1.show()
 """
 
+#----------------------------------------Abstract Class and Abstract Method---------------------------------------------
+#python doesn't support 'Abstract' cls or method by default but we have 'abc'(Abstract Base Classes) module to achieve Abstract cls
+#what are Abstract cls or method? :
+"""
+class computer:
+
+    def prcessor(self): #the method which has only declaration but not have defination(statement) called them 'Abstract Method'
+        pass            #and the class (computer) which have Abstract Method called as 'Abstract Cls'
+"""
+
+#continue...
+"""
+from abc import ABC, abstractmethod  #module to achieve Abstract cls and method
+
+class computer(ABC): #this will make the sub cls of cls ABC | Abstract cls
+
+    @abstractmethod
+    def processor(self):
+        pass
+
+
+comp= computer()  #this will give an error bcz we can't create obj of Abstract cls bcz we have not defined (statement) of method
+comp.processor()
+"""
+#continue...
+
+"""
+from abc import ABC, abstractmethod
+
+class computer(ABC):
+
+    @abstractmethod
+    def processor(self):
+        pass
+
+#...
+class laptop(computer):  #even this cls of boj we can't create bcz inheriting computer cls which is Abstract cls
+    pass
+
+
+#comp= computer()
+comp1= laptop()  #...
+#comp.processor()
+"""
+
+#continue...
+
+"""
+from abc import ABC, abstractmethod
+
+class computer(ABC):
+
+    @abstractmethod
+    def processor(self):
+        pass
+
+
+class laptop(computer):
+
+    #...
+    def processor(self):  # now we are defining(statement) of this method
+        print("its running")
+
+
+#comp= computer()
+comp1= laptop()
+#comp.processor()
+comp1.processor()
+"""
+
 
 
 
