@@ -3333,4 +3333,50 @@ for i in values:
     print(i)
 """
 
+#-----------------------------------------------Generator---------------------------------------------------------------
+#generator work like iterator, here you don't need to define __iter__ and __next__
+
+#making iterator, which will print 1-10 using generator
+"""
+def topten():
+
+    yield 1 #yield behave as a return but yield return obj of iterator
+            #yield is a 'generator' which will return 'iterator'
+
+    #we can take multiple yields here
+
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+
+values= topten()
+print(values)  #yield will return the obj
+
+#to print the value of generator 'yield'
+print(values.__next__())
+print(values.__next__())
+
+    #or
+
+for i in values:
+    print(i)
+"""
+
+# -> top ten perfect square using generator
+
+"""
+def topten():
+
+    n= 1
+    while n<=10:
+        sq= n*n
+        yield sq
+        n= n+1    #or n+=1
+
+values= topten()
+
+for i in values:
+    print(i)
+"""
 
