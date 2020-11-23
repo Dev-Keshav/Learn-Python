@@ -3256,6 +3256,81 @@ comp1= laptop()
 comp1.processor()
 """
 
+#--------------------------------------------------------iterator-------------------------------------------------------
 
+#nums= [7,8,9,5]
+
+"""
+print(nums[1]) #here we can print the value which is on index 1
+print(nums[7]) #what if i print beyond the index value | offcourse will give an error
+"""
+#---
+"""
+for i in nums: #another way of printing values | for loop
+    print(i)
+"""
+
+#another way of iterating values
+"""
+it= iter(nums) #this will convert list (nums) into iterator
+               #this iterator will give one value at a time not all the value
+
+print(it.__next__()) #this will print one value at a time
+print(it.__next__()) #this will give one value at a time but next to previous value
+
+print(next(it))
+
+for i in nums:  #for loop
+    print(i)
+"""
+
+#creating your own iterator, which will print 1-10
+"""
+class TopTen:
+
+    def __init__(self):
+        self.num= 1  #counter variable
+
+    def __iter__(self): #this will give the obj of iterator
+        return self
+
+    def __next__(self): #this will give the next value
+
+        #this is how this will give you the next value
+            val= self.num
+            self.num += 1
+
+            return val
+
+values= TopTen()
+
+for i in values:
+    print(i)
+"""
+#continue...
+"""
+class TopTen:
+
+    def __init__(self):
+        self.num= 1 
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+
+        if self.num<=10: #...1 | condition to print
+            val= self.num
+            self.num += 1
+
+            return val
+        else:
+            raise StopIteration  #...2 |to stop the loop | exception
+
+values= TopTen()
+
+for i in values:
+    print(i)
+"""
 
 
