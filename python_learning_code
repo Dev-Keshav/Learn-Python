@@ -3380,3 +3380,115 @@ for i in values:
     print(i)
 """
 
+#--------------------------------------------Exception Handling---------------------------------------------------------
+#Errors and Three types Error
+
+#1 Compile time error
+  #error due to spelling mistake called as syntactical errors or arror at the time of compiltion | e.g. missing colon (:), wrong spelling (prant)etc.
+
+#2 Logical error
+  #codes get compiled and giving an output but not be correct output (e.g. wrong output)
+
+#3 Run time error
+  #your code get compiled, no syntactical error, no logical error as well
+  #error due to wrong input by user | mistake done by user not by you |you are dividing two number user gives input (e.g. divided by zero)
+  #error during run time due to wrong input, deleted some file, issue with database or server connection
+
+#...
+"""
+a= 5
+b= 2
+print(a/b)
+#-> here we have three statement line no. 3416, 3417, 3418
+#line no. 3416, 3417 called as 'normal'statement (bcz this will not give error if there values changes in future)
+#and 3418 called as 'critical' statement (this can give an error)
+"""
+#or...
+"""
+a= 5
+b= 0
+
+print(a/b)
+
+print("By")  #this stetement is not getting called due to in b/w error. i don't want it!
+"""
+#...
+"""
+a= 5
+b= 0
+
+try: #with 'try' keyword we are saying below are critical statement try to run
+    print(a/b)
+
+except Exception: #with 'except' keyword saying if there above critical statement have error or goes wrong
+                  #then except exception (error) and run below statement
+    print("Hey you can not not divide 5 by 0")
+    #you can perform d/f operation here as well!
+
+print("By")
+"""
+
+#what if you wanted to print error as well
+
+"""
+a= 5
+b= 0
+
+try:
+    print(a/b)
+
+except Exception as e: #here exception (error) take as 'e'
+    print("Hey you can not do", e)
+
+
+print("By")
+"""
+
+#continue... if you have opened resources it's good practice to closed it
+#e.g. if you have opened a database make sure you are closing it before exiting
+"""
+a= 5
+b= 0
+
+try:
+    print("resource opened") #1..
+    print(a/b)
+    #print("resource closed")  #not here outside exception #2..
+except Exception as e:
+    print("you can not do", e)
+    #3...
+    #print("resource closed") #this will work here only if there is any exception. what if there is not any exception to closed resource
+
+#4...
+finally: #finally block will be executed if we get exception(error) as well as if we don't get the error(exception)
+    print("resource closed")
+"""
+
+#continue... d/f type of exception to except or handle
+
+"""
+a= 5
+b= 0
+
+
+try:
+    k = int(input("Enter a number"))  # give input 'str'
+    print(k)
+
+    print("resource opened")
+    print(a/b)
+
+except ZeroDivisionError as e: #this will handle only specific exception 'ZeroDivisionError'
+    print("you can not do",e)
+
+except ValueError as e:  #this will handle only specific exception 'ValueError'
+    print("Invalid input",e)
+
+except Exception as e: #this is to handle all type of exception if there is anything goes wrong
+    print("Something went wrong",e)
+
+finally:
+    print("resource closed")
+"""
+
+
