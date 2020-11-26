@@ -3491,4 +3491,202 @@ finally:
     print("resource closed")
 """
 
+#--------------------------------------------------------MultiThreading-------------------------------------------------
+
+#Thread? : A thread is a path of execution within a process. A process can contain multiple threads.
+#A thread of execution is the smallest sequence of programmed instructions
+#that can be managed independently by a scheduler, which is typically a part of the operating system.
+
+#e.g. : In MS office we can write content, change the font, save in other format & etc, MS office provides you so many features
+#so we can break one task into multiple process and then again we can break down those process into small-small thread
+#imagine thread as a lightweight process when you break down a big task into small parts each parts will be called as threads
+
+#--let Build our own Threads
+
+"""class Hello:
+    def run(self):
+        for i in range(5):
+            print("Hello")
+
+class Hi:
+    def run(self):
+        for i in range(5):
+            print("Hi")
+
+t1= Hello()
+t2= Hi()
+
+t1.run()
+t2.run()
+
+#This is printing in sequence wise first 'Hello' and secondly 'Hi' for the five times 
+#when it process using single core- process task sequence wise, e.g first 'hello' then 'hi' called as 'MainThread' and its by default
+#i wanted 'Hello' & 'Hi' take 5 decond(1 'hello'/second, 1 'hi'/second) to print in total takes 10 second
+"""
+#continue...
+
+#Creating Two threads which will called simultaneously or parallelly
+
+"""
+from threading import *   #to work with thread need's to import
+
+class Hello(Thread):
+    def run(self):
+        for i in range(500):
+            print("Hello")
+
+class Hi(Thread):
+    def run(self):
+        for i in range(500):
+            print("Hi")
+
+t1= Hello()
+t2= Hi()
+
+
+t1.start() #we are definig method 'run' & calling 'start'? bcz behind the scene when we say 'start' internally
+           #it will call 'run' method (bcz we do have run method inside class 'thread', (to check ctrl+ click on Thread))
+t2.start()
+
+#finally we have created two thread which will run parallelly but to fast execution not seeing expected output (collision of two thread)
+#in our system have concept 'scheduler' which will give specific time to execute (slow)
+"""
+
+#continue...
+
+"""
+from time import sleep    #module to use scheduler
+
+from threading import *
+
+class Hello(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hello")
+            sleep(1)    #scheduler
+
+class Hi(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hi")
+            sleep(1)
+
+t1= Hello()
+t2= Hi()
+
+
+t1.start()
+sleep(0.2) #to avoid collision
+t2.start()
+
+#so succesfully we have three threads 1. MainThread 2. t1.start 3. t2.start
+"""
+#continue...
+
+"""
+from time import sleep
+
+from threading import *
+
+class Hello(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hello")
+            sleep(1)
+
+class Hi(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hi")
+            sleep(1)
+
+t1= Hello()
+t2= Hi()
+
+
+t1.start()
+sleep(0.2)
+t2.start()
+
+  #2...
+
+t1.join()
+t1.join()
+
+  #1...
+print("By")  #what do you think where this will get printed | ans. In b/w thread
+            #to print this the MainThread is responsible so, we will ask the MainThread to execute only when
+            #thread 1 & 2 is already executed (join)
+"""
+#-------------------------------------------------------File Handling---------------------------------------------------
+#this is linked with 'KeshavDetails.txt' file
+
+# a file named "KeshavDetails", will be opened with the reading mode
+"""
+f= open('KeshavDetails','r')  #first is file name which you wanted to open and second is purpose
+                                #'r', for reading
+                                #'w', for writing
+                                #'a', for appending
+                                #'r+', for both reading and writing
+#print(f)
+
+#this will print the entire content of that file
+#print(f.read())
+
+#this will print single line at a time
+print(f.readline())
+print(f.readline())  #this will print next line to previous one
+print(f.readline(),end="") #if you don't wanted space b/w lines
+print(f.readline())
+print(f.readline(3)) #if you wanted only few character
+"""
+
+#write something in a file
+"""
+f1= open("KeshavDetails2","w") #this will create automatically a file with mentioned name
+                                #if you have not created
+
+#writing text in file
+f1.write("Something Written ")
+f1.write("by Keshav")  #if i delete these two lines from here, these text will be as it is in that txt file
+                    #but if i delete these line and then write something then previous text will be replaced by new one
+                    #but i don't wanted to delete those text which is already in that file i want to add in it more
+"""
+#apending
+"""
+#f1= open("KeshavDetails2","w") #1...
+
+#change to 'a'
+f1= open("KeshavDetails2","a")  #5...
+
+#f1.write("Something Written ") #2...,check text, 3...delete both line, 4...run check text
+#f1.write("by Keshav")
+
+f1.write("Adding some text") #6...
+"""
+
+#fetching and storing data from one to another file
+"""
+f= open("KeshavDetails","r")
+
+f1= open("KeshavDetails2","a")
+
+for data in f:
+    f1.write(data)
+"""
+
+#working with img
+
+"""
+f= open("my_pic.jpg","rb") #1...,rb: read binary bcz in img we don't have char format have numbers, pixel or binary
+
+f1= open("keshav_pic.jpg","wb") #3...
+
+for i in f:  #2...
+    print(i)
+
+    #3...
+    f1.write(i)
+"""
+
 
